@@ -1,0 +1,224 @@
+[
+  {
+    "case_id": "multi_000",
+    "gold_path": "evaluation/data/gold/gold.xlsx",
+    "broken_path": "evaluation\\data\\broken_multi\\multi_000.xlsx",
+    "errors": [
+      {
+        "target_cell": "Dashboard!F4",
+        "error_type": "missing_formula",
+        "old_formula": "40130.92",
+        "gold_formula": "=Cost!F2"
+      },
+      {
+        "target_cell": "Cost!J2",
+        "error_type": "wrong_operator",
+        "old_formula": "=RawData!J2*RawData!J4-RawData!J5",
+        "gold_formula": "=RawData!J2*RawData!J4+RawData!J5"
+      }
+    ],
+    "static_candidate_count": 2,
+    "expected_status": "success"
+  },
+  {
+    "case_id": "multi_001",
+    "gold_path": "evaluation/data/gold/gold.xlsx",
+    "broken_path": "evaluation\\data\\broken_multi\\multi_001.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!N3",
+        "error_type": "wrong_range",
+        "old_formula": "=SUM(B3:L3)",
+        "gold_formula": "=SUM(B3:M3)"
+      },
+      {
+        "target_cell": "Cost!D2",
+        "error_type": "missing_formula",
+        "old_formula": "36163.25",
+        "gold_formula": "=RawData!D2*RawData!D4+RawData!D5"
+      }
+    ],
+    "static_candidate_count": 2,
+    "expected_status": "success"
+  },
+  {
+    "case_id": "multi_002",
+    "gold_path": "evaluation/data/gold/gold.xlsx",
+    "broken_path": "evaluation\\data\\broken_multi\\multi_002.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!H3",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=RawData!H2*0.25",
+        "gold_formula": "='P&L'!H2*0.25"
+      },
+      {
+        "target_cell": "Cost!I2",
+        "error_type": "wrong_operator",
+        "old_formula": "=RawData!I2*RawData!I4-RawData!I5",
+        "gold_formula": "=RawData!I2*RawData!I4+RawData!I5"
+      }
+    ],
+    "static_candidate_count": 2,
+    "expected_status": "success"
+  },
+  {
+    "case_id": "multi_003",
+    "gold_path": "evaluation/data/gold/gold.xlsx",
+    "broken_path": "evaluation\\data\\broken_multi\\multi_003.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!L4",
+        "error_type": "missing_formula",
+        "old_formula": "3555.7199999999993",
+        "gold_formula": "='P&L'!L2-'P&L'!L3"
+      },
+      {
+        "target_cell": "Cost!H2",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=RawData!H3*RawData!H4+RawData!H5",
+        "gold_formula": "=RawData!H2*RawData!H4+RawData!H5"
+      },
+      {
+        "target_cell": "Cost!G2",
+        "error_type": "wrong_operator",
+        "old_formula": "=RawData!G2*RawData!G4-RawData!G5",
+        "gold_formula": "=RawData!G2*RawData!G4+RawData!G5"
+      }
+    ],
+    "static_candidate_count": 3,
+    "expected_status": "success"
+  },
+  {
+    "case_id": "multi_004",
+    "gold_path": "evaluation/data/gold/gold.xlsx",
+    "broken_path": "evaluation\\data\\broken_multi\\multi_004.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!N4",
+        "error_type": "wrong_range",
+        "old_formula": "=SUM(B4:L4)",
+        "gold_formula": "=SUM(B4:M4)"
+      },
+      {
+        "target_cell": "P&L!K2",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=Cost!K2-Cost!K2",
+        "gold_formula": "=Revenue!K2-Cost!K2"
+      }
+    ],
+    "static_candidate_count": 2,
+    "expected_status": "success"
+  },
+  {
+    "case_id": "multi_005",
+    "gold_path": "evaluation/data/gold/gold.xlsx",
+    "broken_path": "evaluation\\data\\broken_multi\\multi_005.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!K3",
+        "error_type": "missing_formula",
+        "old_formula": "4011.1499999999996",
+        "gold_formula": "='P&L'!K2*0.25"
+      },
+      {
+        "target_cell": "Cost!D2",
+        "error_type": "wrong_operator",
+        "old_formula": "=RawData!D2*RawData!D4-RawData!D5",
+        "gold_formula": "=RawData!D2*RawData!D4+RawData!D5"
+      }
+    ],
+    "static_candidate_count": 2,
+    "expected_status": "success"
+  },
+  {
+    "case_id": "multi_006",
+    "gold_path": "evaluation/data/gold/gold.xlsx",
+    "broken_path": "evaluation\\data\\broken_multi\\multi_006.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!N2",
+        "error_type": "wrong_range",
+        "old_formula": "=SUM(B2:L2)",
+        "gold_formula": "=SUM(B2:M2)"
+      },
+      {
+        "target_cell": "P&L!H2",
+        "error_type": "missing_formula",
+        "old_formula": "20768.72",
+        "gold_formula": "=Revenue!H2-Cost!H2"
+      }
+    ],
+    "static_candidate_count": 2,
+    "expected_status": "success"
+  },
+  {
+    "case_id": "multi_007",
+    "gold_path": "evaluation/data/gold/gold.xlsx",
+    "broken_path": "evaluation\\data\\broken_multi\\multi_007.xlsx",
+    "errors": [
+      {
+        "target_cell": "Dashboard!H3",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=Cost!H2",
+        "gold_formula": "=Revenue!H2"
+      },
+      {
+        "target_cell": "P&L!L4",
+        "error_type": "wrong_operator",
+        "old_formula": "='P&L'!L2+'P&L'!L3",
+        "gold_formula": "='P&L'!L2-'P&L'!L3"
+      }
+    ],
+    "static_candidate_count": 2,
+    "expected_status": "success"
+  },
+  {
+    "case_id": "multi_008",
+    "gold_path": "evaluation/data/gold/gold.xlsx",
+    "broken_path": "evaluation\\data\\broken_multi\\multi_008.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!F3",
+        "error_type": "missing_formula",
+        "old_formula": "894.9699999999993",
+        "gold_formula": "='P&L'!F2*0.25"
+      },
+      {
+        "target_cell": "P&L!B2",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=Revenue!B3-Cost!B2",
+        "gold_formula": "=Revenue!B2-Cost!B2"
+      },
+      {
+        "target_cell": "P&L!F2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!F2+Cost!F2",
+        "gold_formula": "=Revenue!F2-Cost!F2"
+      }
+    ],
+    "static_candidate_count": 3,
+    "expected_status": "success"
+  },
+  {
+    "case_id": "multi_009",
+    "gold_path": "evaluation/data/gold/gold.xlsx",
+    "broken_path": "evaluation\\data\\broken_multi\\multi_009.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!N4",
+        "error_type": "wrong_range",
+        "old_formula": "=SUM(B4:L4)",
+        "gold_formula": "=SUM(B4:M4)"
+      },
+      {
+        "target_cell": "P&L!I3",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=Revenue!I2*0.25",
+        "gold_formula": "='P&L'!I2*0.25"
+      }
+    ],
+    "static_candidate_count": 2,
+    "expected_status": "success"
+  }
+]

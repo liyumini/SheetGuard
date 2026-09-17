@@ -1,0 +1,201 @@
+[
+  {
+    "case_id": "hard_000",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\gold\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\broken_hard\\hard_000.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2"
+      }
+    ],
+    "expected_status": "success",
+    "expected_dismissed": [
+      "Revenue!E2"
+    ],
+    "static_candidate_count": 2
+  },
+  {
+    "case_id": "hard_001",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\gold\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\broken_hard\\hard_001.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!E2",
+        "error_type": "missing_formula",
+        "old_formula": "904.8000000000029",
+        "gold_formula": "=Revenue!E2-Cost!E2"
+      },
+      {
+        "target_cell": "P&L!H2",
+        "error_type": "missing_formula",
+        "old_formula": "20768.72",
+        "gold_formula": "=Revenue!H2-Cost!H2"
+      }
+    ],
+    "expected_status": "partial_success",
+    "expected_skipped": [
+      "Dashboard!F3",
+      "Dashboard!F4"
+    ],
+    "static_candidate_count": 4
+  },
+  {
+    "case_id": "hard_002",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\gold\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\broken_hard\\hard_002.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!D2",
+        "error_type": "missing_formula",
+        "old_formula": "48506.85",
+        "gold_formula": "=RawData!D2*RawData!D3"
+      },
+      {
+        "target_cell": "Revenue!G2",
+        "error_type": "missing_formula",
+        "old_formula": "64710.39",
+        "gold_formula": "=RawData!G2*RawData!G3"
+      },
+      {
+        "target_cell": "Revenue!J2",
+        "error_type": "missing_formula",
+        "old_formula": "56440.5",
+        "gold_formula": "=RawData!J2*RawData!J3"
+      },
+      {
+        "target_cell": "Cost!D2",
+        "error_type": "missing_formula",
+        "old_formula": "36163.25",
+        "gold_formula": "=RawData!D2*RawData!D4+RawData!D5"
+      },
+      {
+        "target_cell": "Cost!G2",
+        "error_type": "missing_formula",
+        "old_formula": "39821.14",
+        "gold_formula": "=RawData!G2*RawData!G4+RawData!G5"
+      },
+      {
+        "target_cell": "Cost!K2",
+        "error_type": "missing_formula",
+        "old_formula": "43505.16",
+        "gold_formula": "=RawData!K2*RawData!K4+RawData!K5"
+      },
+      {
+        "target_cell": "P&L!D2",
+        "error_type": "missing_formula",
+        "old_formula": "12343.599999999999",
+        "gold_formula": "=Revenue!D2-Cost!D2"
+      },
+      {
+        "target_cell": "P&L!G2",
+        "error_type": "missing_formula",
+        "old_formula": "24889.25",
+        "gold_formula": "=Revenue!G2-Cost!G2"
+      },
+      {
+        "target_cell": "P&L!J2",
+        "error_type": "missing_formula",
+        "old_formula": "13217.550000000003",
+        "gold_formula": "=Revenue!J2-Cost!J2"
+      },
+      {
+        "target_cell": "P&L!L2",
+        "error_type": "missing_formula",
+        "old_formula": "4740.959999999999",
+        "gold_formula": "=Revenue!L2-Cost!L2"
+      },
+      {
+        "target_cell": "Dashboard!D2",
+        "error_type": "missing_formula",
+        "old_formula": "9257.699999999999",
+        "gold_formula": "='P&L'!D4"
+      },
+      {
+        "target_cell": "Dashboard!G2",
+        "error_type": "missing_formula",
+        "old_formula": "18666.9375",
+        "gold_formula": "='P&L'!G4"
+      }
+    ],
+    "expected_status": "partial_success",
+    "expected_deferred": [
+      "Dashboard!G2",
+      "P&L!G2",
+      "P&L!J2",
+      "Revenue!G2",
+      "Revenue!J2"
+    ],
+    "static_candidate_count": 12
+  },
+  {
+    "case_id": "hard_003",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\gold\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\broken_hard\\hard_003.xlsx",
+    "errors": [],
+    "expected_status": "no_candidates",
+    "static_candidate_count": 0
+  },
+  {
+    "case_id": "hard_004",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\gold\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\broken_hard\\hard_004.xlsx",
+    "errors": [
+      {
+        "target_cell": "Dashboard!N4",
+        "error_type": "wrong_range",
+        "old_formula": "=SUM(B4:L4)",
+        "gold_formula": "=SUM(B4:M4)"
+      },
+      {
+        "target_cell": "P&L!J2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!J2+Cost!J2",
+        "gold_formula": "=Revenue!J2-Cost!J2"
+      },
+      {
+        "target_cell": "P&L!N4",
+        "error_type": "missing_formula",
+        "old_formula": "124802.12999999999",
+        "gold_formula": "=SUM(B4:M4)"
+      },
+      {
+        "target_cell": "Revenue!I2",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=Cost!I2*RawData!I3",
+        "gold_formula": "=RawData!I2*RawData!I3"
+      },
+      {
+        "target_cell": "Dashboard!F3",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=Revenue!G2",
+        "gold_formula": "=Revenue!F2"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 5
+  },
+  {
+    "case_id": "hard_005",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\gold\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\broken_hard\\hard_005.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!F2",
+        "error_type": "wrong_operator",
+        "old_formula": "=RawData!F2+RawData!F3",
+        "gold_formula": "=RawData!F2*RawData!F3"
+      },
+      {
+        "target_cell": "Cost!F2",
+        "error_type": "wrong_operator",
+        "old_formula": "=RawData!F2*RawData!F4-RawData!F5",
+        "gold_formula": "=RawData!F2*RawData!F4+RawData!F5"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 2
+  }
+]

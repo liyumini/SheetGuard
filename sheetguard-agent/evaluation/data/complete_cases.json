@@ -1,0 +1,359 @@
+[
+  {
+    "case_id": "complete_000",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_000.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!H2",
+        "error_type": "missing_formula",
+        "old_formula": "67858.0",
+        "gold_formula": "=RawData!H2*RawData!H3"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_001",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_001.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!F2",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=RawData!G2*RawData!F3",
+        "gold_formula": "=RawData!F2*RawData!F3"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_002",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_002.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!J4",
+        "error_type": "wrong_operator",
+        "old_formula": "='P&L'!J2+'P&L'!J3",
+        "gold_formula": "='P&L'!J2-'P&L'!J3"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_003",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_003.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!N3",
+        "error_type": "wrong_range",
+        "old_formula": "=SUM(B3:L3)",
+        "gold_formula": "=SUM(B3:M3)"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_004",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_004.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!N4",
+        "error_type": "wrong_range",
+        "old_formula": "=SUM(B4:D4)",
+        "gold_formula": "=SUM(B4:M4)"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_005",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_005.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!G2",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=Revenue!G2-RawData!G2",
+        "gold_formula": "=Revenue!G2-Cost!G2"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_006",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_006.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!N4",
+        "error_type": "missing_formula",
+        "old_formula": "124802.12999999999",
+        "gold_formula": "=SUM(B4:M4)"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_007",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_007.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!C3",
+        "error_type": "missing_formula",
+        "old_formula": "52786.404",
+        "gold_formula": "=IF(RawData!C2>1000, Revenue!C2*0.9, Revenue!C2)"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_008",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_008.xlsx",
+    "errors": [
+      {
+        "target_cell": "Lk!B10",
+        "error_type": "missing_formula",
+        "old_formula": "0.59",
+        "gold_formula": "=VLOOKUP(C10, C10:D10, 2, FALSE)"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_009",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_009.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "missing_formula",
+        "old_formula": "124123.53",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_010",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_010.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "missing_formula",
+        "old_formula": "7.0",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_011",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_011.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N4",
+        "error_type": "missing_formula",
+        "old_formula": "13866.90333333333",
+        "gold_formula": "=AVERAGE(B4:M4)"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_012",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_012.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "missing_formula",
+        "old_formula": "39187.8",
+        "gold_formula": "=MIN(B2:M2)"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_013",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_013.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N3",
+        "error_type": "missing_formula",
+        "old_formula": "49973.88",
+        "gold_formula": "=MAX(B3:M3)"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_014",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_014.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!E3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!E2<1000, Revenue!E2*0.9, Revenue!E2)",
+        "gold_formula": "=IF(RawData!E2>1000, Revenue!E2*0.9, Revenue!E2)"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_015",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_015.xlsx",
+    "errors": [
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=VLOOKUP(C8, C7:D7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_016",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_016.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!E5",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=Revenue!E2",
+        "gold_formula": "='Dashboard'!E2"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_017",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_017.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N4",
+        "error_type": "wrong_range",
+        "old_formula": "=AVERAGE(B4:L4)",
+        "gold_formula": "=AVERAGE(B4:M4)"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "complete_018",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_018.xlsx",
+    "errors": [
+      {
+        "target_cell": "Dashboard!N2",
+        "error_type": "wrong_range",
+        "old_formula": "=SUM(B2:L2)",
+        "gold_formula": "=SUM(B2:M2)"
+      },
+      {
+        "target_cell": "P&L!J2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!J2+Cost!J2",
+        "gold_formula": "=Revenue!J2-Cost!J2"
+      },
+      {
+        "target_cell": "Dashboard!N4",
+        "error_type": "missing_formula",
+        "old_formula": "489602.94",
+        "gold_formula": "=SUM(B4:M4)"
+      },
+      {
+        "target_cell": "Agg!J4",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "='P&L'!K2",
+        "gold_formula": "='P&L'!J2"
+      },
+      {
+        "target_cell": "Revenue!L4",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=VLOOKUP('P&L'!L6, Rate!A2:B13, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(RawData!L6, Rate!A2:B13, 2, FALSE)"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 5
+  },
+  {
+    "case_id": "complete_019",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_019.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!F2",
+        "error_type": "wrong_operator",
+        "old_formula": "=RawData!F2+RawData!F3",
+        "gold_formula": "=RawData!F2*RawData!F3"
+      },
+      {
+        "target_cell": "Cost!F2",
+        "error_type": "wrong_operator",
+        "old_formula": "=RawData!F2*RawData!F4-RawData!F5",
+        "gold_formula": "=RawData!F2*RawData!F4+RawData!F5"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 2
+  },
+  {
+    "case_id": "complete_020",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\complete\\broken\\complete_020.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!E3",
+        "error_type": "missing_formula",
+        "old_formula": "39187.8",
+        "gold_formula": "=IF(RawData!E2>1000, Revenue!E2*0.9, Revenue!E2)"
+      },
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "missing_formula",
+        "old_formula": "0.56",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)"
+      },
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "missing_formula",
+        "old_formula": "39187.8",
+        "gold_formula": "=MIN(B2:M2)"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 3
+  }
+]

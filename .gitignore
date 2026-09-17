@@ -1,0 +1,50 @@
+__pycache__/
+*.pyc
+
+# Keep each project environment and local credentials out of Git.
+.venv/
+**/.venv/
+.env
+**/.env
+
+# Build outputs and local runtime state.
+dist/
+**/dist/
+**/dist-test/
+build/
+**/build/
+*.egg-info/
+**/*.egg-info/
+.sheetguard/
+**/.sheetguard/
+node_modules/
+**/node_modules/
+
+# Generated SheetGuard formula-repair datasets.
+sheetguard-agent/evaluation/data/gold/*
+!sheetguard-agent/evaluation/data/gold/.gitkeep
+sheetguard-agent/evaluation/data/broken/*
+!sheetguard-agent/evaluation/data/broken/.gitkeep
+sheetguard-agent/evaluation/data/cases.json
+
+# Evaluation artifacts: repaired workbooks are run outputs, not repo content.
+sheetguard-agent/evaluation/data/repaired/
+repaired_multi_*.xlsx
+.tmp-analysis/
+
+# CLI run artifacts (audit JSON / Markdown report / repaired workbook).
+out/
+
+# Web 本地上传的工作簿副本（运行时数据，不入库）。
+web_data/
+
+# Local ad-hoc analysis working files.
+e3_tids.txt
+e3items.json
+
+# SheetGuard 真实用户反馈数据集（测试不得写入；.gitkeep 由 Task 7 占位提交）
+sheetguard-agent/evaluation/data/user_feedback/*
+!sheetguard-agent/evaluation/data/user_feedback/.gitkeep
+
+# pytest-cov 本地产物
+.coverage

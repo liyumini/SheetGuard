@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SheetGuard · Excel 公式体检</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brand-dot"></span>SheetGuard</div>
+  <nav id="main-nav">
+    <button data-tab="home" class="active">工作台</button>
+    <button data-tab="repair" disabled>修复</button>
+    <button data-tab="review" disabled>审查</button>
+    <button data-tab="result" disabled>结果</button>
+  </nav>
+  <button id="model-status-lamp" class="lamp" title="点击查看模型配置提示">
+    <span class="lamp-dot" id="lamp-dot"></span><span id="lamp-text">检测中…</span>
+  </button>
+</header>
+<div id="model-banner" class="banner hidden">
+  未检测到模型配置：请先在项目 .env 中设置 OPENAI_API_KEY 与 OPENAI_MODEL。
+</div>
+<main>
+  <section id="tab-home">
+    <div id="dropzone">
+      <div class="dz-title">把 .xlsx 工作簿拖到这里</div>
+      <div class="hint">或者</div>
+      <label class="btn btn-secondary" for="file-input">选择文件</label>
+      <input type="file" id="file-input" accept=".xlsx" hidden>
+    </div>
+    <h2>我的工作簿</h2>
+    <div id="workbook-list"></div>
+  </section>
+
+  <section id="tab-repair" hidden>
+    <div class="page-head">
+      <h2>修复 <span id="repair-name" class="mono-chip"></span></h2>
+      <span id="round-badge" class="badge"></span>
+      <span id="stage-badge" class="badge badge-info" hidden></span>
+    </div>
+    <div id="inspect-overview" class="card" hidden></div>
+    <div class="row">
+      <button id="start-repair" class="btn btn-primary">开始修复</button>
+    </div>
+    <div id="progress-box" class="card" hidden>
+      <div class="bar"><div id="bar-fill"></div></div>
+      <div id="progress-text"></div>
+    </div>
+    <div id="report-box" class="card" hidden></div>
+    <div id="action-bar" class="action-bar" hidden>
+      <a id="download-repaired" class="btn btn-secondary" download>下载修复副本</a>
+      <a id="download-report" class="btn btn-secondary" download>下载报告</a>
+      <button id="goto-review" class="btn btn-primary">进入审查</button>
+    </div>
+  </section>
+
+  <section id="tab-review" hidden>
+    <div class="page-head">
+      <h2>审查</h2>
+      <span id="review-round-badge" class="badge"></span>
+    </div>
+    <div id="review-progress" class="banner banner-accent"></div>
+    <div id="review-cards"></div>
+    <div id="submit-bar" class="submit-bar">
+      <button id="submit-review" class="btn btn-primary">提交审查</button>
+    </div>
+  </section>
+
+  <section id="tab-result" hidden>
+    <div class="page-head"><h2>审查结果</h2></div>
+    <div id="result-card" class="card card-center"></div>
+  </section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>
