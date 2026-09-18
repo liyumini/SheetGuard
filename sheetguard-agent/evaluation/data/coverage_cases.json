@@ -1,0 +1,612 @@
+[
+  {
+    "case_id": "cov_000",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_000.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!N3",
+        "error_type": "wrong_range",
+        "old_formula": "=SUM(B3:L3)",
+        "gold_formula": "=SUM(B3:M3)",
+        "carrier_function": "SUM",
+        "expression_form": "range_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_001",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_001.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!N3",
+        "error_type": "missing_formula",
+        "old_formula": "615315.765",
+        "gold_formula": "=SUM(B3:M3)",
+        "carrier_function": "SUM",
+        "expression_form": "range_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_002",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_002.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!N3",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=SUM(Cost!B3:M3)",
+        "gold_formula": "=SUM(B3:M3)",
+        "carrier_function": "SUM",
+        "expression_form": "range_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_003",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_003.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N4",
+        "error_type": "wrong_range",
+        "old_formula": "=AVERAGE(B4:L4)",
+        "gold_formula": "=AVERAGE(B4:M4)",
+        "carrier_function": "AVERAGE",
+        "expression_form": "range_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_004",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_004.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N4",
+        "error_type": "missing_formula",
+        "old_formula": "13866.90333333333",
+        "gold_formula": "=AVERAGE(B4:M4)",
+        "carrier_function": "AVERAGE",
+        "expression_form": "range_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_005",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_005.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N4",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=AVERAGE(Revenue!B4:M4)",
+        "gold_formula": "=AVERAGE(B4:M4)",
+        "carrier_function": "AVERAGE",
+        "expression_form": "range_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_006",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_006.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "wrong_range",
+        "old_formula": "=MIN(B2:L2)",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN",
+        "expression_form": "range_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_007",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_007.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "missing_formula",
+        "old_formula": "39187.8",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN",
+        "expression_form": "range_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_008",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_008.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=MIN(Cost!B2:M2)",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN",
+        "expression_form": "range_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_009",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_009.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N3",
+        "error_type": "wrong_range",
+        "old_formula": "=MAX(B3:L3)",
+        "gold_formula": "=MAX(B3:M3)",
+        "carrier_function": "MAX",
+        "expression_form": "range_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_010",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_010.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N3",
+        "error_type": "missing_formula",
+        "old_formula": "49973.88",
+        "gold_formula": "=MAX(B3:M3)",
+        "carrier_function": "MAX",
+        "expression_form": "range_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_011",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_011.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N3",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=MAX(Revenue!B3:M3)",
+        "gold_formula": "=MAX(B3:M3)",
+        "carrier_function": "MAX",
+        "expression_form": "range_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_012",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_012.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N7",
+        "error_type": "wrong_range",
+        "old_formula": "=COUNT(B7:L7)",
+        "gold_formula": "=COUNT(B7:M7)",
+        "carrier_function": "COUNT",
+        "expression_form": "range_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_013",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_013.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N7",
+        "error_type": "missing_formula",
+        "old_formula": "12.0",
+        "gold_formula": "=COUNT(B7:M7)",
+        "carrier_function": "COUNT",
+        "expression_form": "range_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_014",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_014.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!D2<1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF",
+        "expression_form": "conditional"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_015",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_015.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=IF(RawData!E2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF",
+        "expression_form": "conditional"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_016",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_016.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "missing_formula",
+        "old_formula": "43656.165",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF",
+        "expression_form": "conditional"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_017",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_017.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=IF(Dashboard!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF",
+        "expression_form": "conditional"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_018",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_018.xlsx",
+    "errors": [
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "wrong_range",
+        "old_formula": "=VLOOKUP(C7, C7:C7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP",
+        "expression_form": "lookup"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_019",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_019.xlsx",
+    "errors": [
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=VLOOKUP(C8, C7:D7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP",
+        "expression_form": "lookup"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_020",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_020.xlsx",
+    "errors": [
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "missing_formula",
+        "old_formula": "0.56",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP",
+        "expression_form": "lookup"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_021",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_021.xlsx",
+    "errors": [
+      {
+        "target_cell": "Lk!F7",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=VLOOKUP(C7, RawData!A7:B7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, Rate!A7:B7, 2, FALSE)",
+        "carrier_function": "VLOOKUP",
+        "expression_form": "lookup"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_022",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_022.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "wrong_range",
+        "old_formula": "=SUMIF(B5:L5, \">=700\", B5:L5)",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)",
+        "carrier_function": "SUMIF",
+        "expression_form": "conditional_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_023",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_023.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=SUMIF(B5:M5, \">=700\", C5:M5)",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)",
+        "carrier_function": "SUMIF",
+        "expression_form": "conditional_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_024",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_024.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "missing_formula",
+        "old_formula": "124123.53",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)",
+        "carrier_function": "SUMIF",
+        "expression_form": "conditional_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_025",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_025.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=SUMIF(Revenue!B5:M5, \">=700\", Revenue!B5:M5)",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)",
+        "carrier_function": "SUMIF",
+        "expression_form": "conditional_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_026",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_026.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "wrong_range",
+        "old_formula": "=COUNTIF(B6:L6, \">1000\")",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF",
+        "expression_form": "conditional_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_027",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_027.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "missing_formula",
+        "old_formula": "7.0",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF",
+        "expression_form": "conditional_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_028",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_028.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=COUNTIF(Revenue!B6:M6, \">1000\")",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF",
+        "expression_form": "conditional_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_029",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_029.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith",
+        "expression_form": "arithmetic"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_030",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_030.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!E2",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=RawData!F2*RawData!E3",
+        "gold_formula": "=RawData!E2*RawData!E3",
+        "carrier_function": "Arith",
+        "expression_form": "arithmetic"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_031",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_031.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "missing_formula",
+        "old_formula": "8677.68",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith",
+        "expression_form": "arithmetic"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_032",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_032.xlsx",
+    "errors": [
+      {
+        "target_cell": "Cost!E2",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=Revenue!E2*Revenue!E4+Revenue!E5",
+        "gold_formula": "=RawData!E2*RawData!E4+RawData!E5",
+        "carrier_function": "Arith",
+        "expression_form": "arithmetic"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 1
+  },
+  {
+    "case_id": "cov_033",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\broken\\cov_033.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "missing_formula",
+        "old_formula": "43656.165",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF",
+        "expression_form": "conditional"
+      },
+      {
+        "target_cell": "Revenue!N3",
+        "error_type": "wrong_range",
+        "old_formula": "=SUM(B3:L3)",
+        "gold_formula": "=SUM(B3:M3)",
+        "carrier_function": "SUM",
+        "expression_form": "range_aggregate"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith",
+        "expression_form": "arithmetic"
+      },
+      {
+        "target_cell": "Lk!B9",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=VLOOKUP(C10, C9:D9, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C9, C9:D9, 2, FALSE)",
+        "carrier_function": "VLOOKUP",
+        "expression_form": "lookup"
+      },
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=COUNTIF(Revenue!B6:M6, \">1000\")",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF",
+        "expression_form": "conditional_aggregate"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 5
+  }
+]

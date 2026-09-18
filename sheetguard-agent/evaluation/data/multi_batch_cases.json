@@ -1,0 +1,1133 @@
+[
+  {
+    "case_id": "mbatch_00",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_00.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=IF(RawData!E2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "wrong_range",
+        "old_formula": "=MIN(B2:L2)",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN"
+      },
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "missing_formula",
+        "old_formula": "124123.53",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)",
+        "carrier_function": "SUMIF"
+      },
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=COUNTIF(Revenue!B6:M6, \">1000\")",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 4
+  },
+  {
+    "case_id": "mbatch_01",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_01.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!D2<1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "Agg!N4",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=AVERAGE(Revenue!B4:M4)",
+        "gold_formula": "=AVERAGE(B4:M4)",
+        "carrier_function": "AVERAGE"
+      },
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "wrong_range",
+        "old_formula": "=VLOOKUP(C7, C7:C7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 3
+  },
+  {
+    "case_id": "mbatch_02",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_02.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=SUMIF(B5:M5, \">=700\", C5:M5)",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)",
+        "carrier_function": "SUMIF"
+      },
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "missing_formula",
+        "old_formula": "39187.8",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN"
+      },
+      {
+        "target_cell": "Lk!F7",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=VLOOKUP(C7, RawData!A7:B7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, Rate!A7:B7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      },
+      {
+        "target_cell": "Agg!N4",
+        "error_type": "wrong_range",
+        "old_formula": "=AVERAGE(B4:L4)",
+        "gold_formula": "=AVERAGE(B4:M4)",
+        "carrier_function": "AVERAGE"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!D2<1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 6
+  },
+  {
+    "case_id": "mbatch_03",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_03.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=IF(RawData!E2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "missing_formula",
+        "old_formula": "7.0",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 3
+  },
+  {
+    "case_id": "mbatch_04",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_04.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!D2<1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "Agg!N7",
+        "error_type": "wrong_range",
+        "old_formula": "=COUNT(B7:L7)",
+        "gold_formula": "=COUNT(B7:M7)",
+        "carrier_function": "COUNT"
+      },
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=MIN(Cost!B2:M2)",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "missing_formula",
+        "old_formula": "8677.68",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Revenue!E2",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=RawData!F2*RawData!E3",
+        "gold_formula": "=RawData!E2*RawData!E3",
+        "carrier_function": "Arith"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 5
+  },
+  {
+    "case_id": "mbatch_05",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_05.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N3",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=MAX(Revenue!B3:M3)",
+        "gold_formula": "=MAX(B3:M3)",
+        "carrier_function": "MAX"
+      },
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=SUMIF(B5:M5, \">=700\", C5:M5)",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)",
+        "carrier_function": "SUMIF"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "missing_formula",
+        "old_formula": "43656.165",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "wrong_range",
+        "old_formula": "=MIN(B2:L2)",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 5
+  },
+  {
+    "case_id": "mbatch_06",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_06.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=SUMIF(B5:M5, \">=700\", C5:M5)",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)",
+        "carrier_function": "SUMIF"
+      },
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "wrong_range",
+        "old_formula": "=VLOOKUP(C7, C7:C7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 3
+  },
+  {
+    "case_id": "mbatch_07",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_07.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N3",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=MAX(Revenue!B3:M3)",
+        "gold_formula": "=MAX(B3:M3)",
+        "carrier_function": "MAX"
+      },
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "missing_formula",
+        "old_formula": "7.0",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF"
+      },
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "wrong_range",
+        "old_formula": "=VLOOKUP(C7, C7:C7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      },
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=SUMIF(B5:M5, \">=700\", C5:M5)",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)",
+        "carrier_function": "SUMIF"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!D2<1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 5
+  },
+  {
+    "case_id": "mbatch_08",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_08.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!E2",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=RawData!F2*RawData!E3",
+        "gold_formula": "=RawData!E2*RawData!E3",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "missing_formula",
+        "old_formula": "7.0",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF"
+      },
+      {
+        "target_cell": "Cost!E2",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=Revenue!E2*Revenue!E4+Revenue!E5",
+        "gold_formula": "=RawData!E2*RawData!E4+RawData!E5",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 4
+  },
+  {
+    "case_id": "mbatch_09",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_09.xlsx",
+    "errors": [
+      {
+        "target_cell": "Cost!E2",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=Revenue!E2*Revenue!E4+Revenue!E5",
+        "gold_formula": "=RawData!E2*RawData!E4+RawData!E5",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "missing_formula",
+        "old_formula": "39187.8",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=IF(RawData!E2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 4
+  },
+  {
+    "case_id": "mbatch_10",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_10.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=COUNTIF(Revenue!B6:M6, \">1000\")",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=IF(RawData!E2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "missing_formula",
+        "old_formula": "8677.68",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 3
+  },
+  {
+    "case_id": "mbatch_11",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_11.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!N3",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=SUM(Cost!B3:M3)",
+        "gold_formula": "=SUM(B3:M3)",
+        "carrier_function": "SUM"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!D2<1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=SUMIF(B5:M5, \">=700\", C5:M5)",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)",
+        "carrier_function": "SUMIF"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 3
+  },
+  {
+    "case_id": "mbatch_12",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_12.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "missing_formula",
+        "old_formula": "8677.68",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!D2<1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "wrong_range",
+        "old_formula": "=MIN(B2:L2)",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 3
+  },
+  {
+    "case_id": "mbatch_13",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_13.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N3",
+        "error_type": "missing_formula",
+        "old_formula": "49973.88",
+        "gold_formula": "=MAX(B3:M3)",
+        "carrier_function": "MAX"
+      },
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=COUNTIF(Revenue!B6:M6, \">1000\")",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!D2<1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 3
+  },
+  {
+    "case_id": "mbatch_14",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_14.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=COUNTIF(Revenue!B6:M6, \">1000\")",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF"
+      },
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "missing_formula",
+        "old_formula": "0.56",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!D2<1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "Revenue!E2",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=RawData!F2*RawData!E3",
+        "gold_formula": "=RawData!E2*RawData!E3",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Agg!N7",
+        "error_type": "wrong_range",
+        "old_formula": "=COUNT(B7:L7)",
+        "gold_formula": "=COUNT(B7:M7)",
+        "carrier_function": "COUNT"
+      },
+      {
+        "target_cell": "Lk!F7",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=VLOOKUP(C7, RawData!A7:B7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, Rate!A7:B7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 6
+  },
+  {
+    "case_id": "mbatch_15",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_15.xlsx",
+    "errors": [
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "wrong_range",
+        "old_formula": "=VLOOKUP(C7, C7:C7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Agg!N4",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=AVERAGE(Revenue!B4:M4)",
+        "gold_formula": "=AVERAGE(B4:M4)",
+        "carrier_function": "AVERAGE"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=IF(RawData!E2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 4
+  },
+  {
+    "case_id": "mbatch_16",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_16.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!N3",
+        "error_type": "wrong_range",
+        "old_formula": "=SUM(B3:L3)",
+        "gold_formula": "=SUM(B3:M3)",
+        "carrier_function": "SUM"
+      },
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "missing_formula",
+        "old_formula": "7.0",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF"
+      },
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=SUMIF(B5:M5, \">=700\", C5:M5)",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)",
+        "carrier_function": "SUMIF"
+      },
+      {
+        "target_cell": "Agg!N3",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=MAX(Revenue!B3:M3)",
+        "gold_formula": "=MAX(B3:M3)",
+        "carrier_function": "MAX"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Agg!N7",
+        "error_type": "wrong_range",
+        "old_formula": "=COUNT(B7:L7)",
+        "gold_formula": "=COUNT(B7:M7)",
+        "carrier_function": "COUNT"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 6
+  },
+  {
+    "case_id": "mbatch_17",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_17.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!N3",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=SUM(Cost!B3:M3)",
+        "gold_formula": "=SUM(B3:M3)",
+        "carrier_function": "SUM"
+      },
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "wrong_range",
+        "old_formula": "=VLOOKUP(C7, C7:C7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      },
+      {
+        "target_cell": "Agg!N7",
+        "error_type": "missing_formula",
+        "old_formula": "12.0",
+        "gold_formula": "=COUNT(B7:M7)",
+        "carrier_function": "COUNT"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=IF(RawData!E2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 4
+  },
+  {
+    "case_id": "mbatch_18",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_18.xlsx",
+    "errors": [
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=VLOOKUP(C8, C7:D7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!D2<1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "missing_formula",
+        "old_formula": "8677.68",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 3
+  },
+  {
+    "case_id": "mbatch_19",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_19.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Revenue!E2",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=RawData!F2*RawData!E3",
+        "gold_formula": "=RawData!E2*RawData!E3",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Agg!N7",
+        "error_type": "missing_formula",
+        "old_formula": "12.0",
+        "gold_formula": "=COUNT(B7:M7)",
+        "carrier_function": "COUNT"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 3
+  },
+  {
+    "case_id": "mbatch_20",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_20.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!D2<1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "Agg!N3",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=MAX(Revenue!B3:M3)",
+        "gold_formula": "=MAX(B3:M3)",
+        "carrier_function": "MAX"
+      },
+      {
+        "target_cell": "Revenue!E2",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=RawData!F2*RawData!E3",
+        "gold_formula": "=RawData!E2*RawData!E3",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "missing_formula",
+        "old_formula": "8677.68",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "wrong_range",
+        "old_formula": "=COUNTIF(B6:L6, \">1000\")",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 5
+  },
+  {
+    "case_id": "mbatch_21",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_21.xlsx",
+    "errors": [
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "missing_formula",
+        "old_formula": "7.0",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF"
+      },
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "wrong_range",
+        "old_formula": "=VLOOKUP(C7, C7:C7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      },
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=SUMIF(B5:M5, \">=700\", C5:M5)",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)",
+        "carrier_function": "SUMIF"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 4
+  },
+  {
+    "case_id": "mbatch_22",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_22.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N7",
+        "error_type": "missing_formula",
+        "old_formula": "12.0",
+        "gold_formula": "=COUNT(B7:M7)",
+        "carrier_function": "COUNT"
+      },
+      {
+        "target_cell": "Revenue!N3",
+        "error_type": "wrong_range",
+        "old_formula": "=SUM(B3:L3)",
+        "gold_formula": "=SUM(B3:M3)",
+        "carrier_function": "SUM"
+      },
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=VLOOKUP(C8, C7:D7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      },
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=MIN(Cost!B2:M2)",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "missing_formula",
+        "old_formula": "43656.165",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 6
+  },
+  {
+    "case_id": "mbatch_23",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_23.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!D2<1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "Agg!N3",
+        "error_type": "missing_formula",
+        "old_formula": "49973.88",
+        "gold_formula": "=MAX(B3:M3)",
+        "carrier_function": "MAX"
+      },
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=SUMIF(B5:M5, \">=700\", C5:M5)",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)",
+        "carrier_function": "SUMIF"
+      },
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=MIN(Cost!B2:M2)",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 4
+  },
+  {
+    "case_id": "mbatch_24",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_24.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=MIN(Cost!B2:M2)",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN"
+      },
+      {
+        "target_cell": "Agg!N4",
+        "error_type": "wrong_range",
+        "old_formula": "=AVERAGE(B4:L4)",
+        "gold_formula": "=AVERAGE(B4:M4)",
+        "carrier_function": "AVERAGE"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=IF(RawData!E2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 3
+  },
+  {
+    "case_id": "mbatch_25",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_25.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "missing_formula",
+        "old_formula": "39187.8",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN"
+      },
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=VLOOKUP(C8, C7:D7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 3
+  },
+  {
+    "case_id": "mbatch_26",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_26.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "wrong_range",
+        "old_formula": "=MIN(B2:L2)",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN"
+      },
+      {
+        "target_cell": "Revenue!E2",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=RawData!F2*RawData!E3",
+        "gold_formula": "=RawData!E2*RawData!E3",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "missing_formula",
+        "old_formula": "43656.165",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 4
+  },
+  {
+    "case_id": "mbatch_27",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_27.xlsx",
+    "errors": [
+      {
+        "target_cell": "Lk!F7",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=VLOOKUP(C7, RawData!A7:B7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, Rate!A7:B7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      },
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=VLOOKUP(C8, C7:D7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!D2<1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 3
+  },
+  {
+    "case_id": "mbatch_28",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_28.xlsx",
+    "errors": [
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=IF(RawData!E2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "Revenue!N3",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=SUM(Cost!B3:M3)",
+        "gold_formula": "=SUM(B3:M3)",
+        "carrier_function": "SUM"
+      },
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "missing_formula",
+        "old_formula": "7.0",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF"
+      },
+      {
+        "target_cell": "P&L!C2",
+        "error_type": "wrong_operator",
+        "old_formula": "=Revenue!C2+Cost!C2",
+        "gold_formula": "=Revenue!C2-Cost!C2",
+        "carrier_function": "Arith"
+      },
+      {
+        "target_cell": "Agg!N4",
+        "error_type": "wrong_range",
+        "old_formula": "=AVERAGE(B4:L4)",
+        "gold_formula": "=AVERAGE(B4:M4)",
+        "carrier_function": "AVERAGE"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 5
+  },
+  {
+    "case_id": "mbatch_29",
+    "gold_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\coverage\\gold.xlsx",
+    "broken_path": "D:\\MyPythonProject\\excel-agent\\sheetguard-agent\\evaluation\\data\\multi_batch\\broken\\mbatch_29.xlsx",
+    "errors": [
+      {
+        "target_cell": "Agg!N4",
+        "error_type": "wrong_range",
+        "old_formula": "=AVERAGE(B4:L4)",
+        "gold_formula": "=AVERAGE(B4:M4)",
+        "carrier_function": "AVERAGE"
+      },
+      {
+        "target_cell": "Revenue!D3",
+        "error_type": "wrong_operator",
+        "old_formula": "=IF(RawData!D2<1000, Revenue!D2*0.9, Revenue!D2)",
+        "gold_formula": "=IF(RawData!D2>1000, Revenue!D2*0.9, Revenue!D2)",
+        "carrier_function": "IF"
+      },
+      {
+        "target_cell": "Agg!N6",
+        "error_type": "missing_formula",
+        "old_formula": "7.0",
+        "gold_formula": "=COUNTIF(B6:M6, \">1000\")",
+        "carrier_function": "COUNTIF"
+      },
+      {
+        "target_cell": "Lk!B7",
+        "error_type": "wrong_cell_reference",
+        "old_formula": "=VLOOKUP(C8, C7:D7, 2, FALSE)",
+        "gold_formula": "=VLOOKUP(C7, C7:D7, 2, FALSE)",
+        "carrier_function": "VLOOKUP"
+      },
+      {
+        "target_cell": "Agg!N5",
+        "error_type": "cross_sheet_error",
+        "old_formula": "=SUMIF(Revenue!B5:M5, \">=700\", Revenue!B5:M5)",
+        "gold_formula": "=SUMIF(B5:M5, \">=700\", B5:M5)",
+        "carrier_function": "SUMIF"
+      },
+      {
+        "target_cell": "Agg!N2",
+        "error_type": "wrong_range",
+        "old_formula": "=MIN(B2:L2)",
+        "gold_formula": "=MIN(B2:M2)",
+        "carrier_function": "MIN"
+      }
+    ],
+    "expected_status": "success",
+    "static_candidate_count": 6
+  }
+]

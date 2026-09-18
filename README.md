@@ -29,7 +29,7 @@ Excel 报表里的公式错误是最常见的"沉默事故"：一个抄错的引
 - 🔍 **工具调用调查循环** — 模型主动调用"读取单元格 / 依赖图 / 同家族公式"等工具取证，证据不足输出 `unresolved` 而不是硬修；
 - 🧮 **自研重算验证引擎** — 实现 Excel 公式子集语义（`SUM/AVERAGE/MIN/MAX/COUNT/IF/SUMIF/COUNTIF/VLOOKUP` + 依赖传播），修复提案经重算差分 + 结构六项检查双重验证；
 - 🕸️ **依赖拓扑调度** — 候选按 hard prerequisites 排序逐格修复，上游修复结果实时反哺下游判断，超预算候选智能延期（deferred）；
-- 📊 **评测驱动开发** — 三套数据集（合成 / complete / 真实用户反馈）接入 Langfuse，每轮版本迭代跑实验对比 recall / precision / false_repair；
+- 📊 **评测驱动开发** — 覆盖矩阵 / 多错误批次 / 真实用户反馈数据集接入 Langfuse，每轮版本迭代跑实验对比 recall / precision / false_repair / formula_accuracy；
 - 👤 **用户反馈闭环** — 网页逐格审查（提案对 / 没修对 / 本来没坏 / 跳过）→ 被否格自动触发下一轮重修（携带排除集与用户备注）→ 认证格沉淀为金标准数据集；
 - 🌐 **本地 Web 入口** — FastAPI + 原生前端：上传即出检测概览、修复过程逐格实时进度、审查结果一键回写。
 
@@ -73,17 +73,19 @@ flowchart LR
 
 ## 📊 评测指标
 
-`sheetguard-repair-complete-v1` 数据集（21 个工作簿案例，覆盖全部六类异常注入，LLM 端到端真实运行）：
+**`sheetguard-repair-multi-batch-v1` 数据集**（30 个多错误工作簿：每表 3~6 个错误、共 123 个错误，5 类错误类型均衡，LLM 端到端真实运行）：
 
 | 指标 | 结果 | 含义 |
 |---|---|---|
-| `workbook_status` | **1.0** | 整表终态与期望一致 |
-| `repair_recall` | **1.0** | 该修的格子全部修到 |
-| `repair_precision` | **1.0** | 修的格子全部修对 |
-| `false_repair` | **0** | 全实验周期零误修 |
-| 用例总数 | 21/21 | 无失败案例 |
+| `repair_recall` | **0.960** | 目标错误格的修复召回（该修的修了多少） |
+| `repair_precision` | **1.000** | 修的格子全部是真实错误（目标选择零失误） |
+| `false_repair` | **0** | 零误修——没把任何一个正常公式改坏 |
+| `formula_accuracy` | **0.946** | 修复公式与标准答案逐字一致（117/123） |
+| `workbook_status` | **0.833** | 25/30 张表完全成功 |
 
-> 指标在 Langfuse 数据集上持续复跑对比（v1.6 → v1.13 六轮迭代，`false_repair` 从未破零）；数据集由生成器合成 + 真实用户反馈双源构成，评测器与修复管线解耦。
+**`sheetguard-repair-coverage-v1` 数据集**（覆盖矩阵：9 个重算引擎函数 + 四则表达式形态 × 5 类错误类型的全部 33 个可注入组合 + 1 个五故障混合）与 `sheetguard-repair-complete-v1` 数据集（21 个精选工作簿，`repair_recall / precision 均 1.0、false_repair 0`）继续作为回归基线。
+
+> 指标在 Langfuse 数据集上持续复跑对比（v1.6 → v1.14，`false_repair` 从未破零）；数据集由生成器合成（固定种子可复现）+ 真实用户反馈双源构成，评测器与修复管线解耦。当前失败模式集中在条件聚合（COUNTIF/SUMIF）criteria 边界反推（4/123 格），已定位为下一轮迭代目标。
 
 ## 🚀 快速开始
 
